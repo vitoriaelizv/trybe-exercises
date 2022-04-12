@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    height: 80px;
+}
+
+.stoma-facts {
+    width: 900px;
+}
+
+img {
+    width: 500px;
+}
+
+.sto {
+    height: 80px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    background-color: green;
+}
