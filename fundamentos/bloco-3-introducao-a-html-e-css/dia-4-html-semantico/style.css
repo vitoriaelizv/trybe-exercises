@@ -5,9 +5,18 @@ body {
 header {
     background-color: green;
     height: 80px;
-    border: 8px pink solid
+    border: 4px pink solid
 }
 
 .navigation {
-    border: 8px pink solid;
+    border: 8px red solid;
+}
+
+.stoma-facts {
+    width: 900px;
+    border: 4px purple solid;
+}
+
+.O-S {
+    font-style: italic;
 }
