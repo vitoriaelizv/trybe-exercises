@@ -1,51 +1,62 @@
-div:hover {
-    border: 6px solid black;
-  }
-  
-  div:nth-of-type(1) {
-    background-color: red;
-  }
-  
-  div:nth-of-type(2) {
-    background-color: rgb(203, 170, 230);
-  }
-  
-  div:nth-of-type(3) {
+ol li {
     background-color: yellow;
   }
   
-  div:nth-of-type(4) {
-    background-color: grey;
+  ol li:nth-child(even) {
+    color: green;
   }
   
-  div:nth-of-type(5) {
-    background-color: lightblue;
+  ol li:nth-child(odd) {
+    text-transform: uppercase;
   }
   
-  div:nth-of-type(1) > h3 {
-    color: purple;
+  h1, h2 {
+    color: red;
   }
   
-  div:nth-of-type(2) > h3 {
-    color: green 
+  h1 em, h2 em {
+    font-size: 40px;
+    border: 1px solid black;
   }
+ 
+  li, utilize a propriedade font-weight para deixá-lo negrito. */
   
-  div:nth-of-type(3) > h3 {
+  li {
     font-size: 20px;
   }
   
-  div:nth-of-type(4) > h3 {
-    font-family: monospace;
+  li em {
+    font-weight: 700;
   }
   
-  div:nth-of-type(5) > h3 {
-    font-style: italic
+  #linguagens li:not(:nth-child(n + 4)) {
+    color: blue;
   }
   
-  div:nth-of-type(3) {
-    height: 100px;
+  .pink-bg {
+    background-color: pink;
   }
   
-  div:nth-child(odd) h3 {
-    font-style: italic
+  #aliados li a:hover {
+    font-weight: 700;
+  }
+  
+  #aliados li a[href*="stackoverflow"] {
+    color: orange;
+  }
+  
+  #aliados li a[href*="w3schools"] {
+    color: green;
+  }
+  
+  #aliados li a[href*="mozilla"] {
+    color: black;
+  }
+  
+  #aliados li a[href*="devdocs"] {
+    color: yellow;
+  }
+  
+  #aliados li a[href*="trybe"] {
+    color: green;
   }
