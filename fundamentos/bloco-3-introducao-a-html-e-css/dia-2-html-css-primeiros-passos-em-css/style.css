@@ -1,0 +1,25 @@
+h1 {
+    width: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+ul {
+    background-color: olivedrab;
+}
+.list-style {
+    background-color: greenyellow;
+}
+p { 
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 40px;
+    text-decoration: underline;
+}
+#q-2 {
+    background-color: aqua;
+}
+body {
+    font-size: 16px;
+    text-align: center;
+}
