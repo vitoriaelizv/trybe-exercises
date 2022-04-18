@@ -1,8 +1,11 @@
-const a = 56
-const b = 89
+const a = 111
+const b = 77
+const c = 127
 
-if (a > b) {
-    console.log('a é maior que b')
+if (a > b && a > c) {
+    console.log('a é maior número dentre os 3')
+} else if (b > a && b > c) {
+    console.log('b é maior número dentre os 3')
 } else {
-    console.log('b é maior que a')
+    console.log('c é maior número dentre os 3')
 }
