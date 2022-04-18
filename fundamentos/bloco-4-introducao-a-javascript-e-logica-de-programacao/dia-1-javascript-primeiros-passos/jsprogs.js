@@ -1,11 +1,9 @@
-const a = 111
-const b = 77
-const c = 127
+const num = -2
 
-if (a > b && a > c) {
-    console.log('a é maior número dentre os 3')
-} else if (b > a && b > c) {
-    console.log('b é maior número dentre os 3')
+if (num > 0) {
+    console.log('positive')
+} else if (num < 0) {
+    console.log('negative')
 } else {
-    console.log('c é maior número dentre os 3')
+    console.log('zero')
 }
