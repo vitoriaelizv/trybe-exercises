@@ -1,15 +1,23 @@
-let angulo1 = 40
-let angulo2 = -20
-let angulo3 = 60
-let somaDosAngulos = angulo1 + angulo2 + angulo3
-let angulosPositivos = angulo1 > 0 && angulo2 > 0 && angulo3 > 0
+let pecaDeXadrez = 'CAVALO';
 
-if (angulosPositivos) {
-    if(somaDosAngulos === 180) {
-    console.log(true)
-    } else {
-    console.log(false)
-    };
-} else {
-    console.group('Erro: triângulo inválido')
+switch (pecaDeXadrez.toUpperCase()) {
+    case 'CAVALO':
+        console.log('CAVALO: movimento em "L"')
+        break
+    case 'TORRE':
+        console.log('TORRE: movimento horizontal e vertical')
+        break
+    case 'BISPO':
+        console.log('BISPO: movimento diagonal')
+        break
+    case 'PEÃO':
+        console.log('PEÃO: movimento para frente')
+        break
+    case 'REI':
+        console.log('REI: movimento para qualquer direção, de uma em uma casa')
+        break
+    case 'RAINHA':
+        console.log('RAINHA: movimento horizontal, vertical e diagonal')
+    default:
+        console.log('ERRO: peça inexistente')
 }
