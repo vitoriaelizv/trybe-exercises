@@ -1,9 +1,11 @@
-const a = 8
-const b = 33
-const c = 77
 
-if (a % 2 !== 0 || b % 2 !== 0|| c !== 2 > 0) {
-    console.log(true)
+const custo = 9
+const valorVenda = 13
+
+if (custo >= 0 && valorVenda >= 0) {
+  const totalCusto = custo * 1.2
+  const totalLucro = (valorVenda - totalCusto) * 1000
+  console.log(totalLucro)
 } else {
-    console.log(false)
+  console.log("Error: os valores não podem ser negativos")
 }
