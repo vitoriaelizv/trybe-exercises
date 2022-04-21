@@ -95,3 +95,24 @@ switch (pecaXadrez.toLowerCase()) {
         console.log('Erro: peça inválida.');
         break;
 };
+
+// exeercício 7 - programa de reversão de nota (porcentagem para conceitos; ex.: A e F)
+
+let porcentagemNota = 75;
+
+if (porcentagemNota < 0 || porcentagemNota > 100) {
+    console.log("Erro: nota invalida!");
+}
+  else if (porcentagemNota >= 90) {
+    console.log('A');
+} else if (porcentagemNota >= 80) {
+    console.log('B');
+} else if (porcentagemNota >= 70) {
+    console.log('C');
+} else if (porcentagemNota >= 60) {
+    console.log('D');
+} else if (porcentagemNota >= 50) {
+    console.log('E');
+} else {
+    console.log('F');
+};
