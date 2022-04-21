@@ -2,10 +2,12 @@
 let a = 13;
 let b = 4;
 
-adicao = a + b;
-subtracao = a - b;
-multiplicacao = a * b;
-divisao = a / b
-modulo = a % b;
+let adicao = a + b;
+let subtracao = a - b;
+let multiplicacao = a * b;
+let divisao = a / b
+let modulo = a % b;
 
 // console.log([adicao, subtracao, multiplicacao, divisao, modulo])
+
+
