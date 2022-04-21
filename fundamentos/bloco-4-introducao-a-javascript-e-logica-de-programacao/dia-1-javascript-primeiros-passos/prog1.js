@@ -36,3 +36,15 @@ if (number1 > number2 && number1 > number3) {
 } else {
     console.log(number3);
 };
+
+
+// exercício 4 - programa que retorna "positive", "negative" ou "zero"
+const x = -50;
+
+if (x > 0) {
+    console.log('positive')
+} else if (x < 0) {
+    console.log('negative')
+} else {
+    console.log('zero')
+}
