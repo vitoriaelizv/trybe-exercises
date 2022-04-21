@@ -22,3 +22,17 @@ if (num1 > num2) {
 } else {
     console.log('Erro: os números são iguais.');
 };
+
+
+// exercício 3 - programa que retorna o maior de 3 números
+const number1 = 983;
+const number2 = 348;
+const number3 = 2983;
+
+if (number1 > number2 && number1 > number3) {
+    console.log(number1);
+} else if (number2 > number1 && number2 > number3) {
+    console.log(number2);
+} else {
+    console.log(number3);
+};
