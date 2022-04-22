@@ -5,7 +5,7 @@ let b = 4;
 let adicao = a + b;
 let subtracao = a - b;
 let multiplicacao = a * b;
-let divisao = a / b
+let divisao = a / b;
 let modulo = a % b;
 
 // console.log([adicao, subtracao, multiplicacao, divisao, modulo])
@@ -96,8 +96,8 @@ switch (pecaXadrez.toLowerCase()) {
         break;
 };
 
-// exeercício 7 - programa de reversão de nota (porcentagem para conceitos; ex.: A e F)
 
+// exeercício 7 - programa de reversão de nota (porcentagem para conceitos; ex.: A e F)
 let porcentagemNota = 75;
 
 if (porcentagemNota < 0 || porcentagemNota > 100) {
@@ -115,4 +115,16 @@ if (porcentagemNota < 0 || porcentagemNota > 100) {
     console.log('E');
 } else {
     console.log('F');
+};
+
+
+// ecercício 8 - programa que identifica pelo menos um número par
+const c = 8;
+const d = 33;
+const e = 18;
+
+if ((c % 2) === 0 || (d % 2) === 0|| (e % 2 === 0)) {
+    console.log(true);
+} else {
+    console.log(false);
 };
