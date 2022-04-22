@@ -123,7 +123,19 @@ const c = 8;
 const d = 33;
 const e = 18;
 
-if ((c % 2) === 0 || (d % 2) === 0|| (e % 2 === 0)) {
+if ((c % 2) === 0 || (d % 2) === 0 || (e % 2) === 0) {
+    console.log(true);
+} else {
+    console.log(false);
+};
+
+
+// exercício 9 - programa que identifica pelo menos um número ímpar
+const f = 9;
+const g = 4;
+const h = 13;
+
+if ((f % 2) != 0 || (g % 2) != 0 || (h % 2) != 0) {
     console.log(true);
 } else {
     console.log(false);
