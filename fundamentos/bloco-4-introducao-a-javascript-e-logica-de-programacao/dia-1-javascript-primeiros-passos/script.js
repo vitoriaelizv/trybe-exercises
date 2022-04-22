@@ -140,3 +140,15 @@ if ((f % 2) != 0 || (g % 2) != 0 || (h % 2) != 0) {
 } else {
     console.log(false);
 };
+
+
+// exercício 10 - programa de vendas
+const custoProduto = 100;
+const valorVenda = 160;
+
+if (custoProduto > 0 && valorVenda > 0) {
+    lucro = (valorVenda - (custoProduto * 1.2)) * 1000;
+    console.log(lucro);
+} else {
+    console.log('Erro: os valores não podem ser negativos');
+};
