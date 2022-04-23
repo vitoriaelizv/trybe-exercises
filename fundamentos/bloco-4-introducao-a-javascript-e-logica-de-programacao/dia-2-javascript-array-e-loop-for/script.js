@@ -55,4 +55,15 @@ if (resultado === 0) {
     console.log('Nenhum valor ímpar encontrado.');
   } else {
     console.log(resultado);
-  }
+  };
+
+
+  // exercício 7 - menor vaor de umarray
+  let valorMinimo = numeros[0];
+
+  for (let index4 = 1; index4 < numeros.length; index4++) {
+      if (numeros[index4] < valorMinimo) {
+          valorMinimo = numeros[index4];
+      }
+  };
+  console.log(valorMinimo);
