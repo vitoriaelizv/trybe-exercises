@@ -13,3 +13,11 @@ for (let i = 0; i < numeros.length; i++) {
     soma += numeros[i];
 };
 console.log(soma);
+
+
+// exercício 3 - média aritmética 
+let soma2 = 0;
+for (let i = 0; i < numeros.length; i++) {
+    soma2 += numeros[i];
+};
+console.log(soma2 / numeros.length);
