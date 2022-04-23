@@ -9,6 +9,7 @@ for (let numero of numeros) {
 
 // exercício 2 - somar todos os valores de um array
 let soma = 0;
+
 for (let i = 0; i < numeros.length; i++) {
     soma += numeros[i];
 };
@@ -17,7 +18,17 @@ console.log(soma);
 
 // exercício 3 - média aritmética 
 let soma2 = 0;
-for (let i = 0; i < numeros.length; i++) {
-    soma2 += numeros[i];
+
+for (let index = 0; index < numeros.length; index++) {
+    soma2 += numeros[index];
+    media = soma2 / numeros.length;
 };
-console.log(soma2 / numeros.length);
+console.log(media);
+
+
+// exercício 4  - exercicío 3 pt.2 com if/else
+if (media > 20) {
+    console.log('valor maior que 20');
+} else {
+    console.log('valor menor ou igual a 20');
+};
