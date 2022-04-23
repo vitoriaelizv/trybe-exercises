@@ -1,4 +1,4 @@
-// variável usada do exercício 1 ao 7
+// variável usada do exercício 1 ao 9
 let numeros = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // exercício 1 - percorrer array e imprimir os valores
@@ -77,3 +77,8 @@ let numeros2 = [];
 for (let index5 = 1; index5 <=25; index5++) {
     numeros2.push(index5);
 };
+console.log(numeros2)
+
+
+// exercício 9 - utilizar o array criado no exercício anterior para imprimir o resultado da divisão de cada um dos elementos por 2
+git 
