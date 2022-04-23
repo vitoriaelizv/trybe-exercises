@@ -9,6 +9,7 @@ for (let numero of numeros) {
 
 // exercício 2 - somar todos os valores de um array
 let soma = 0;
+
 for (let i = 0; i < numeros.length; i++) {
     soma += numeros[i];
 };
@@ -17,6 +18,7 @@ console.log(soma);
 
 // exercício 3 - média aritmética 
 let soma2 = 0;
+
 for (let i = 0; i < numeros.length; i++) {
     soma2 += numeros[i];
     media = soma2;
@@ -58,8 +60,8 @@ if (resultado === 0) {
   };
 
 
-  // exercício 7 - menor vaor de umarray
-  let valorMinimo = numeros[0];
+  // exercício 7 - menor vaor de um array
+let valorMinimo = numeros[0];
 
   for (let index4 = 1; index4 < numeros.length; index4++) {
       if (numeros[index4] < valorMinimo) {
@@ -67,3 +69,11 @@ if (resultado === 0) {
       }
   };
   console.log(valorMinimo);
+
+
+  // exercício 8 - criar um array com for
+let numeros2 = []; 
+
+for (let index5 = 1; index5 <=25; index5++) {
+    numeros2.push(index5);
+};
