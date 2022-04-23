@@ -81,4 +81,6 @@ console.log(numeros2)
 
 
 // exercício 9 - utilizar o array criado no exercício anterior para imprimir o resultado da divisão de cada um dos elementos por 2
-git 
+for (let num of numeros2) {
+    console.log(num / 2);
+};
