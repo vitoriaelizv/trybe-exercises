@@ -19,8 +19,8 @@ console.log(soma);
 // exercício 3 - média aritmética 
 let soma2 = 0;
 
-for (let i = 0; i < numeros.length; i++) {
-    soma2 += numeros[i];
+for (let index6 = 0; index6 < numeros.length; index6 += 1) {
+    soma2 += numeros[index6];
     media = soma2;
 };
 console.log(media);
@@ -37,7 +37,7 @@ if(media > 20) {
 // exercício 5 - maior valor de um array
 let valorMaximo = numeros[0];
 
-for (let index2 = 1; index2 < numeros.length; index2++) {
+for (let index2 = 1; index2 < numeros.length; index2 += 1) {
     if (numeros[index2] > valorMaximo) {
         valorMaximo = numeros[index2];
     }
@@ -48,7 +48,7 @@ console.log(valorMaximo);
 // exercício 6 - descobrir valores ímpares 
 let resultado = 0;
 
-for (let index3 = 0; index3 < numeros.length; index3++) {
+for (let index3 = 0; index3 < numeros.length; index3 += 1) {
     if (numeros[index3] % 2 !== 0) {
       resultado += 1;
     };
@@ -63,7 +63,7 @@ if (resultado === 0) {
   // exercício 7 - menor vaor de um array
 let valorMinimo = numeros[0];
 
-  for (let index4 = 1; index4 < numeros.length; index4++) {
+  for (let index4 = 1; index4 < numeros.length; index4 += 1) {
       if (numeros[index4] < valorMinimo) {
           valorMinimo = numeros[index4];
       }
@@ -74,11 +74,13 @@ let valorMinimo = numeros[0];
   // exercício 8 - criar um array com for
 let numeros2 = []; 
 
-for (let index5 = 1; index5 <=25; index5++) {
+for (let index5 = 1; index5 <=25; index5 += 1) {
     numeros2.push(index5);
 };
 console.log(numeros2)
 
 
 // exercício 9 - utilizar o array criado no exercício anterior para imprimir o resultado da divisão de cada um dos elementos por 2
-git 
+for (let num of numeros2) {
+    console.log(num / 2);
+};
