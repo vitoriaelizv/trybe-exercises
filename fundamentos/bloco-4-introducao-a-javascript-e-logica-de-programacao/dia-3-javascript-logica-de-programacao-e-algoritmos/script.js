@@ -3,16 +3,16 @@ let fatorial = 1;
 
 for (let index = 10; index > 0; index -= 1) {
     fatorial *= index;
- }
- console.log(fatorial);
+ };
+console.log(fatorial);
 
 
- // exercício 2 - algoritmo que inverte uma palavra
- let palavra = 'tryber';
- let palavraReversa = '';
+// exercício 2 - algoritmo que inverte uma palavra
+let palavra = 'tryber';
+let palavraReversa = '';
  
- for (let index = 0; index < palavra.length; index += 1) {
-   palavraReversa += word[palavra.length - 1 - index];
- }
+for (let index = 0; index < palavra.length; index += 1) {
+   palavraReversa += palavra[palavra.length - 1 - index];
+};
  
- console.log(palavraReversa);
+console.log(palavraReversa);
