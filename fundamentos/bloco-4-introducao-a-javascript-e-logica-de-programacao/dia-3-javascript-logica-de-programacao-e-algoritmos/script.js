@@ -37,3 +37,19 @@ for (let index2 = 0; index2 < array.length; index2 += 1) {
     };
 };
 console.log([menorPalavra, maiorPalavra]);
+
+
+// exercício 4 - algoritmo que retorna o maior número primo entre 0 e 50
+let numeroPrimo = 0;
+
+for (numero = 0; numero < 50; numero +=1) {
+    let ehPrimo = true;
+    for (let  divisor = 2; divisor < numero; divisor += 1) {
+        if (numero % divisor === 0) {
+            ehPrimo = false;
+        } else {
+            numeroPrimo = numero
+        }
+    };
+};
+console.log(numeroPrimo);
