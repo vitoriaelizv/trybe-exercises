@@ -13,3 +13,8 @@ console.log('Boas-vindas, ' + info.personagem);
 
 // notação por colchetes (bracked notation)
 console.log('Boas=vindas, ' + info['personagem']);
+
+
+// exercício 2 - inserir no obejto uma nova propriedade
+info.recorrente = 'Sim'
+//console.log(info);
