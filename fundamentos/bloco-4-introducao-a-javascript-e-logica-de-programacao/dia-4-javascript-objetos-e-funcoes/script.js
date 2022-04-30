@@ -24,3 +24,9 @@ info.recorrente = 'Sim'
 for (let key in info) {
     console.log(key);
 };
+
+
+// exercício 3 - for/in que mostra os valores das chaves do obejeto
+for (let value in info) {
+    console.log(info[value]);
+}
