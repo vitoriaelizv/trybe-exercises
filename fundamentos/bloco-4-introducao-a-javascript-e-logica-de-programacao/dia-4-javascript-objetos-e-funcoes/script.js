@@ -69,7 +69,7 @@ let leitor = {
 
 
 // exercício 6 - acessar chaves e fazer um console 
-console.log('O livro favorito de ' + leitor['nome'] + ' / ' + leitor['sobrenome'] + ' se chama "' + leitor['livrosFavoritos'][0]['titulo'] + '"');
+console.log('O livro favorito de ' + leitor['nome'] + ' / ' + leitor['sobrenome'] + ' se chama "' + leitor['livrosFavoritos'][0]['titulo'] + '."');
 
 
 // exercício 7 - adicionar um novo livro a chave 'livrosFavoritos'
@@ -77,4 +77,8 @@ leitor.livrosFavoritos.push({
     titulo: 'Harry Potter e o Prisioneiro de Azkaban',
     autor: 'JK Rowling',
     editora: 'Rocco',
-  });
+});
+
+
+  // exercício 8 - acessar chaves específicas e faz um console.log
+  console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.')
