@@ -12,9 +12,15 @@ let info = {
 console.log('Boas-vindas, ' + info.personagem);
 
 // notação por colchetes (bracked notation)
-console.log('Boas=vindas, ' + info['personagem']);
+console.log('Boas-vindas, ' + info['personagem']);
 
 
 // exercício 2 - inserir no obejto uma nova propriedade
 info.recorrente = 'Sim'
 //console.log(info);
+
+
+// exercício 3 - for/in que mostra as chaves do obejeto
+for (let key in info) {
+    console.log(key);
+};
