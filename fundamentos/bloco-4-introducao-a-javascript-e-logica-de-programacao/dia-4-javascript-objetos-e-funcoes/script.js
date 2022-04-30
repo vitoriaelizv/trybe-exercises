@@ -32,7 +32,7 @@ for (let value in info) {
 };
 
 
-// exercício 5 - definir um segundo obejto e imprimir seus valores junto com os do primeiro
+// exercício 5 - definir um segundo obejto e imprimir seus valores juntos com os do primeiro
 let info2 = {
     personagem: "Tio Patinhas",
     origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
@@ -51,3 +51,22 @@ for (let propriedades in info) {
       console.log(info[propriedades] + " e " + info2[propriedades]);
     }
   };
+
+
+// objeto que será usado nos exercícios 6 a 8
+let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+      {
+        titulo: 'O Pior Dia de Todos',
+        autor: 'Daniela Kopsch',
+        editora: 'Tordesilhas',
+      },
+    ],
+};
+
+
+// exercício 6 - acessar chaves e fazer um console 
+console.log('O livro favorito de ' + leitor['nome'] + ' / ' + leitor['sobrenome'] + ' se chama "' + leitor['livrosFavoritos'][0]['titulo'] + '"');
