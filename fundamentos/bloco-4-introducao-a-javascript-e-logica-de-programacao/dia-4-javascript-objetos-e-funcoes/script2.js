@@ -80,3 +80,18 @@ function soma(numero) {
     }
     return total;
 };
+
+
+// exercício 7 - criar uma função que recebe dois parâmetros (strings) e verifica se o segundo é o fim do primeiro
+function verificaFimPalavra(palavra, fimPalavra) {
+    palavra = palavra.split('');
+    fimPalavra = fimPalavra.split('');
+    controle = true;
+    for (let index = 0; index < fimPalavra.length; index += 1) {
+      if (palavra[palavra.length - fimPalavra.length + index] != fimPalavra[index]) {
+        controle = false;
+      };
+    };
+    return controle;
+};
+// verificaFimPalavra('trybe', 'be');
