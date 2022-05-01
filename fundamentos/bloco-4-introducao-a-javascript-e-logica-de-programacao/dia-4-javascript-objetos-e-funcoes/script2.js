@@ -10,7 +10,7 @@ function verificaPalindromo(string){
 // verificaPalindromo('arara')
 
 
-// exercício 2 - criar uma função que recebe um array e retorne o indice de maior valor
+// exercício 2 - criar uma função que recebe um array e retorne o índice de maior valor
 function indiceDoMaior(array) {
     let indiceMaior = 0;
     for (indice in array) {
@@ -21,3 +21,16 @@ function indiceDoMaior(array) {
     return indiceMaior
 };
 // indiceDoMaior([2, 3, 6, 7, 10, 1])
+
+
+// exercício 3 - criar uma função que recebe um array e retorno o índice de menor valor
+function indiceDoMenor(array2) {
+    let indiceMenor = 0;
+    for (let indice2 in array2) {
+        if (array2[indiceMenor] > array2[indice2]) {
+            indiceMenor = indice2;
+        };
+    };
+    return indiceMenor;
+};
+// indiceDoMenor([2, 4, 6, 7, 10, 0, -3])
