@@ -36,7 +36,7 @@ function indiceDoMenor(array2) {
 // indiceDoMenor([2, 4, 6, 7, 10, 0, -3])
 
 
-// exercício 4 - criar uma funçaão que recebe um array e retorna o nome coma a maior quantidade decaracteres
+// exercício 4 - criar uma funçaão que recebe um array e retorna o nome com a maior quantidade decaracteres
 function maisCaracteres (nomes) {
     let maiorNome = nomes[0];
     for (let nome in nomes) {
@@ -47,3 +47,26 @@ function maisCaracteres (nomes) {
     return maiorNome;
 };
 // maisCaracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])
+
+
+// exercício 5 - criar uma função que recebe um array de numeros retorne o numero ue mais se repete
+function maisRepetido(numeros) {
+    let contRepetido = 0;
+    let contNumero = 0;
+    let indexNumeroRepetido = 0;
+    for (let index in numeros) {
+      let verificaNumero = numeros[index];
+      for (let index2 in numeros) {
+        if (verificaNumero === numeros[index2]) {
+          contNumero += 1;
+        };
+      };
+      if (contNumero > contRepetido) {
+        contRepetido = contNumero;
+        indexNumeroRepetido = index;
+      };
+      contNumero = 0;;
+    };
+    return numeros[indexNumeroRepetido];
+};
+// maisRepetido([2, 3, 2, 5, 8, 2, 3])
