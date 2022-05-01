@@ -49,7 +49,7 @@ function maisCaracteres (nomes) {
 // maisCaracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])
 
 
-// exercício 5 - criar uma função que recebe um array de numeros retorne o numero ue mais se repete
+// exercício 5 - criar uma função que recebe um array de numeros retorna o numero que mais se repete
 function maisRepetido(numeros) {
     let contRepetido = 0;
     let contNumero = 0;
@@ -70,3 +70,13 @@ function maisRepetido(numeros) {
     return numeros[indexNumeroRepetido];
 };
 // maisRepetido([2, 3, 2, 5, 8, 2, 3])
+
+
+// exercício 6 - criar uma função que recebe um número(N) e retorna a soma de todos os números até N
+function soma(numero) {
+    let total = 0;
+    for (let index = 1; index <= numero; index += 1) {
+      total = total + index;
+    }
+    return total;
+};
