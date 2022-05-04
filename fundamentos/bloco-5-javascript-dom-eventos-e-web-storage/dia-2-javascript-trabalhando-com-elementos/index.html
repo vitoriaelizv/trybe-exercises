@@ -57,9 +57,9 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+    // COLOQUE SEU CÓDIGO AQUI
 
-      // 1. 🚀 Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body
+    // 1. 🚀 Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body
         const tagBody = document.getElementsByTagName('body')[0];
         const tagH1 = document.createElement('h1');
         tagH1.innerText = 'Exercício 5.2 - JavaScript DOM';
@@ -103,7 +103,7 @@
         for (valor in valores) {
             const tagLi = document.createElement('li');
             tagLi.innerText = valores[valor];
-            tagUl.appendChild(tagLi)
+            tagUl.appendChild(tagLi);
         };
 
     // 9. 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2
@@ -112,14 +112,15 @@
             tagMain.appendChild(tagH3);
         };
         
-        // 10. 🚀 Adicione a classe title na tag h1 criada
+    // 10. 🚀 Adicione a classe title na tag h1 criada
         tagH1.className = 'title';
         
-        // 11. 🚀 Adicione a classe description nas 3 tags h3 criadas
+    // 11. 🚀 Adicione a classe description nas 3 tags h3 criadas
         const tagH3 = document.getElementsByTagName('h3');
         for (index = 0; index < 3; index += 1) {
             tagH3[index].className = 'description';
         };
+
     // 12. 🚀 Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild()
         const sectionLeftContent = document.getElementsByClassName('left-content')[0];
         tagMain.removeChild(sectionLeftContent);
@@ -134,7 +135,6 @@
     // 15. 🚀 Remova os dois últimos elementos (nove e dez) da lista criada no passo 8
         tagUl.lastChild.remove();
         tagUl.lastChild.remove();
-        
     </script>
   </body>
 </html>
