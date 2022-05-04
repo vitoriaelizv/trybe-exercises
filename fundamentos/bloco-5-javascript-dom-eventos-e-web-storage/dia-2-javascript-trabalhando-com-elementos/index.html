@@ -106,14 +106,20 @@
             tagUl.appendChild(tagLi)
         };
 
-    // 9. 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
-        for (index = 1; index <= 3; index +=1) {
+    // 9. 🚀 Adicione 3 tags h3, todas sendo filhas do main criado no passo 2
+        for (index = 1; index <= 3; index += 1) {
             const tagH3 = document.createElement('h3');
             tagMain.appendChild(tagH3);
         };
-
-    // 10. 🚀 Adicione a classe title na tag h1 criada;
-         tagH1.className = 'title';
+        
+        // 10. 🚀 Adicione a classe title na tag h1 criada
+        tagH1.className = 'title';
+        
+        // 11. 🚀 Adicione a classe description nas 3 tags h3 criadas
+        const tagH3 = document.getElementsByTagName('h3');
+        for (index = 0; index < 3; index += 1) {
+            tagH3[index].className = 'description';
+        };
     </script>
   </body>
 </html>
