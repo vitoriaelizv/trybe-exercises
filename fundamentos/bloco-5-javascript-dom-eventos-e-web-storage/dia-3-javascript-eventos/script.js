@@ -135,3 +135,23 @@ function createDaysOfTheWeek() {
       divMyTasks.appendChild(task);
       };
       addtask('cozinhar');
+
+// exercício 8 - Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task
+    function addTaskColor(color) {
+      let = divMyTasks = document.querySelector('.my-tasks');
+      let newTask = document.createElement('div');
+      newTask.className = 'task';
+      newTask.style.backgroundColor = color;
+      divMyTasks.appendChild(newTask);
+      };
+      addTaskColor('green');
+  
+// exercício 9 - Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected, ela estará selecionada
+    let newTask = document.querySelector('.task');
+    newTask.addEventListener('click', function() {
+    if (newTask.className === 'task') {
+      newTask.className = 'task selected';
+    } else {
+      newTask.className = 'task';
+    };
+    });
