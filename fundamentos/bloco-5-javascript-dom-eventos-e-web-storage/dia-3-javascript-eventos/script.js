@@ -45,3 +45,13 @@ function createDaysOfTheWeek() {
         };
       };
       createDaysOfTheMonth();
+
+// exercício 2 - Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados"
+    function createButton(buttonName) {
+      let divButtonsContainer = document.getElementsByClassName('buttons-container')[0];
+      let button = document.createElement('button')
+      button.id = 'btn-holiday'
+      button.innerText = buttonName
+      divButtonsContainer.appendChild(button);
+    };
+    createButton('Feriados');
