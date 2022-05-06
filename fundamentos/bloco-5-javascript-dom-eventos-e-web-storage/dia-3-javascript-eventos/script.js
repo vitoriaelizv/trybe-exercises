@@ -126,3 +126,12 @@ function createDaysOfTheWeek() {
       
       dayMouseOver();
       dayMouseOut();
+
+// exercício 7 - Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa
+    function addtask(tarefa) {
+      let = divMyTasks = document.querySelector('.my-tasks');
+      let task = document.createElement('span');
+      task.innerHTML = tarefa;
+      divMyTasks.appendChild(task);
+      };
+      addtask('cozinhar');
