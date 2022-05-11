@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+}
+  
+p {
+    padding: 20px;
+}
+
+/* primeiro brakpoint (tela pequena) e suas propriedades  */
+@media screen and (max-width: 500px) {
+    body {
+        margin: 25px 50px;
+        background-color: rgb(131, 169, 175);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header p {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .aside-one ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside-two ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    p {
+        padding: 0 5px;
+        line-height: 1.5em;
+    }
+}
+
+/* segundo brakpoint (tela média) e suas propriedades  */
+@media screen and (min-width: 501px) {
+    body {
+        padding: 20px 20px;
+        background-color: rgb(230, 211, 173);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+/* terceiro brakpoint (tela grande) e suas propriedades  */
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: rgb(49, 45, 49);
+        padding: 30px 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+    }
+}
+  
