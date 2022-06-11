@@ -44,18 +44,39 @@ console.log(`Os números ${oddsAndEvensSort} se encontram ordenados de forma cre
 // 3 - Crie uma função que receba um número e retorne seu fatorial
 
 // versão "normal"
-// const fatorial = n => {
-//     if (n === 0) {
-//         return 1;
-//     }
-//     let resultado = n;
-//     while (n > 1) {
-//         resultado *= --n;
-//     }
-//     return resultado;
-// }
+const fatorial = n => {
+    if (n === 0) {
+        return 1;
+    }
+    let resultado = n;
+    while (n > 1) {
+        resultado *= --n;
+    }
+    return resultado;
+}
 
 // versão ternary
 const fatorial = n => n > 1 ? n * fatorial(n - 1) : 1;
 console.log(fatorial(5));
 
+// 2 - Crie uma função que receba uma frase e retorne a maior palavra
+
+// versão "normal"
+const maiorPalavra = frase => {
+    let arrayDePalavras = frase.split(" ");
+    let tamanho = 0;
+    let resultado = "";
+
+    for (const palavra of arrayDePalavras) {
+        if (palavra.length > tamanho) {
+            tamanho = palavra.length;
+            resultado = palavra;
+        }
+    }
+    return resultado;
+}
+
+// versão ternary
+const maiorPalavra = (frase) => frase.split(' ').sort((palavraA, palavraB) => palavraB.length - palavraA.length)[0];
+
+console.log(maiorPalavra('vê se pode uma coisa dessas'));
