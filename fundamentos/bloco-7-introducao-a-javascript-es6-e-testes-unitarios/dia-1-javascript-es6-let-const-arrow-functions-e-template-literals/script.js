@@ -30,3 +30,13 @@ const testingScope = (escopo) => {
 }
 
 testingScope(false);
+
+// 2 - Crie uma função que retorne um array em ordem crescente 
+
+// Crie uma função que faça com que o array oddsAndEvens fique na ordem crescente;
+// Utilize o console.log e template literals para retornar a frase: 'Os números 2,3,4,7,10,13
+// se encontram ordenados de forma crescente!';
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+const oddsAndEvensSort = oddsAndEvens.sort((a, b) => a - b); // código da função tirado do site https://ricardo-reis.medium.com/o-m%C3%A9todo-sort-do-array-javascript-482576734e0a
+console.log(`Os números ${oddsAndEvensSort} se encontram ordenados de forma crescente!`);
