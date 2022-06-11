@@ -40,3 +40,22 @@ testingScope(false);
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 const oddsAndEvensSort = oddsAndEvens.sort((a, b) => a - b); // código da função tirado do site https://ricardo-reis.medium.com/o-m%C3%A9todo-sort-do-array-javascript-482576734e0a
 console.log(`Os números ${oddsAndEvensSort} se encontram ordenados de forma crescente!`);
+
+// 3 - Crie uma função que receba um número e retorne seu fatorial
+
+// versão "normal"
+// const fatorial = n => {
+//     if (n === 0) {
+//         return 1;
+//     }
+//     let resultado = n;
+//     while (n > 1) {
+//         resultado *= --n;
+//     }
+//     return resultado;
+// }
+
+// versão ternary
+const fatorial = n => n > 1 ? n * fatorial(n - 1) : 1;
+console.log(fatorial(5));
+
