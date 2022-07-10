@@ -44,17 +44,15 @@ Object.assign(allLessons, { lesson1, lesson2, lesson3 })
 // console.log(allLessons);
 
 // 6 - Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas
-const getNumberOfStudents = (obj) => {
+const totalEstudantes = (objeto) => {
     let total = 0;
-
-    const array = Object.keys(obj);
-
-    for (index in array) {
-        total += obj[array[index]].numeroEstudantes;
+    const chaves = Object.keys(objeto);
+    for (let chave in chaves) {
+        total += objeto[chaves[chave]].numeroEstudantes;
     }
     return total;
 };
-// console.log(getNumberOfStudents(allLessons));
+// console.log(totalEstudantes(allLessons));
 
 // 7 - Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto
 const x = (objeto, numero) => Object.values(objeto)[numero];
@@ -63,10 +61,46 @@ const x = (objeto, numero) => Object.values(objeto)[numero];
 // 8 - Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave
 const verifica = (objeto, chave, valor) => {
     const entradas = Object.entries(objeto);
-    let isEqual = false;
+    let ehIgual = false;
     for (let index in entradas) {
-        if (entradas[index][0] === chave && entradas[index][1] === valor) isEqual = true;
+        if (entradas[index][0] === chave && entradas[index][1] === valor) ehIgual = true;
     }
-    return isEqual;
+    return ehIgual;
 };
-console.log(verifica(lesson2, 'professor', 'Carlos'));
+// console.log(verifica(lesson2, 'professor', 'Carlos'));
+
+// BÔNUS
+// Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5
+const matEstudantes = (objeto) => {
+    let total = 0;
+    const chaves = Object.keys(objeto);
+    for (let index in chaves) {
+        if (objeto[chaves[index]].materia === 'Matemática') {
+            total += objeto[chaves[index]].numeroEstudantes;
+        }
+    }
+    return total;
+}
+// console.log(matEstudantes(allLessons));
+
+// 2 - Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes
+const info = (objeto, nome) => {
+    const allLessons = [];
+    let todosEstudantes = 0;
+    const valores = Object.values(objeto);
+    for (index in valores) {
+        if (valores[index].professor === nome) {
+            allLessons.push(valores[index].materia)
+            todosEstudantes += valores[index].numeroEstudantes;
+        }
+    }
+    return { materias: allLessons, estudantes: todosEstudantes };
+}
+
+const relatorio = (allLessons, nome) => {
+    const relatorio = {};
+    relatorio.professor = nome;
+    Object.assign(relatorio, info(allLessons, nome));
+    return relatorio;
+}
+console.log(relatorio(allLessons, 'Maria Clara'));
