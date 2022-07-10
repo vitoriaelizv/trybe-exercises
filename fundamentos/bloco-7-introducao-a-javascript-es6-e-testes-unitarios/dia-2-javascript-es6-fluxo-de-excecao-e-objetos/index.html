@@ -20,7 +20,10 @@
     <script>
         const verify = (value1, value2) => {
             if (!value1 || !value2) {
-                throw new Error('Preencha todos os campos.');
+                throw new Error('Tá errado essa merda aí, meu!');
+            }
+            if (isNaN(value1) || isNaN(value2)) {
+                throw new Error('Insira apenas números.');
             }
         }
 
