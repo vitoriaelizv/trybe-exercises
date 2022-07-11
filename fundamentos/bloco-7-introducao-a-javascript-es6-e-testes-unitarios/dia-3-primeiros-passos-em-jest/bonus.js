@@ -69,5 +69,3 @@ const searchEmployee = (id, detail) => {
 };
 
 module.exports = searchEmployee;
-
-module.exports = searchEmployee;
