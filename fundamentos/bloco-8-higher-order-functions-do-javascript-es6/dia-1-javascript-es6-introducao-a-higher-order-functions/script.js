@@ -94,12 +94,12 @@ const battleMembers = { mage, warrior, dragon };
 // 1 - Crie uma função que retorna o dano do dragão.
 // O dano será um número aleatório entre 15 (dano mínimo) e o valor do atributo strength (dano máximo).
 
-const dragonDamage = () => {
+const dragonAttack = () => {
     let damage = Math.floor(Math.random() * (dragon.strength - 15 + 1)) + 15;
     return damage;
 }
 
-// console.log(dragonDamage());
+// console.log(dragonAttack());
 
 // 2 - Crie uma função que retorna o dano causado pelo warrior.
 // O dano será um número aleatório entre o valor do atributo strength (dano mínimo) e o valor de strength * weaponDmg (dano máximo).
@@ -140,12 +140,41 @@ const returnObj = () => {
 // Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem warrior e atualizará os healthPoints do monstro dragon.
 // Além disto ela também deve atualizar o valor da chave damage do warrior.
 
+// 2 - Crie a segunda HOF que compõe o objeto gameActions. Ela será a função que simula o turno do personagem mage. 
+// Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem mage e atualizará os healthPoints do monstro dragon. 
+// Além disto ela também deve atualizar o valor das chaves damage e mana do mage.
+
+// 3 - Crie a terceira HOF que compõe o objeto gameActions. Ela será a função que simula o turno do monstro dragon. 
+// Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo monstro dragon e atualizará os healthPoints dos personagens
+// mage e warrior. Além disto ela também deve atualizar o valor da chave damage do monstro.
+
+
+// 4 - Adicione ao objeto gameActions uma função que retorne o objeto battleMembers atualizado e faça um console.log para visualizar
+// o resultado final do turno.
+
 const gameActions = {
     warriorTurn: (warriorAttack) => {
         const warriorDamage = warriorAttack(warrior);
         warrior.damage = warriorDamage;
         return dragon.healthPoints -= warriorDamage;
-    }
+    },
+    mageTurn: (mageAttack) => {
+        const mageTurnStats = mageAttack(mage);
+        const mageDamage = mageTurnStats.damageDealt;
+        mage.damage = mageDamage;
+        mage.mana -= mageTurnStats.manaSpent;
+        dragon.healthPoints -= mageDamage;
+    },
+    dragonTurn: (dragonAttack) => {
+        const dragonDamage = dragonAttack(dragon);
+        mage.healthPoints -= dragonDamage;
+        warrior.healthPoints -= dragonDamage;
+        dragon.damage = dragonDamage;
+    },
+    turnResults: () => battleMembers
 }
 
-console.log(gameActions.warriorTurn(warriorAttack));
+// console.log(gameActions.warriorTurn(warriorAttack));
+// console.log(gameActions.mageTurn(mageAttack));
+// console.log(gameActions.dragonTurn(dragonAttack));
+// console.log(gameActions.turnResults());
