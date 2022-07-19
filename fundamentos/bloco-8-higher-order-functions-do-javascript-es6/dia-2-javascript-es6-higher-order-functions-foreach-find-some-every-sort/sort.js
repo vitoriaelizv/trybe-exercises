@@ -61,6 +61,8 @@ const books = [
     },
 ];
 
+// 4 - Ordene os livros por data de lançamento em ordem decrescente.
+
 const booksOrderedByReleaseYearDesc = () => books.sort((a, b) => b.releaseYear - a.releaseYear)
 
 console.log(booksOrderedByReleaseYearDesc())
