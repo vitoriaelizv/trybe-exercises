@@ -61,10 +61,8 @@ const books = [
     },
 ];
 
-// 1 - Utilize o find para retornar o primeiro número do array que é divisível por 3 e 5, caso ele exista:
+// 1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947
 
-function authorBornIn1947(books) {
-   return books.find((book) => book.author.birthYear === 1947);
-}
+const authorBornIn1947 = (books) => books.find((book) => book.author.birthYear === 1947).author.name;
 
 console.log(authorBornIn1947(books));
