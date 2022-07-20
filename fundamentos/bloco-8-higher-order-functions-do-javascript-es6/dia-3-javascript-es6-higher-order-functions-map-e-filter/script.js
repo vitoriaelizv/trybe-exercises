@@ -99,3 +99,12 @@ const fantasyOrScienceFictionAuthors = () => books.filter((book) => book.genre =
 .map((book) => book.author.name).sort()
 
 // console.log(fantasyOrScienceFictionAuthors());
+
+// 6 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação
+
+const oldBooks = () => {
+    const currentYear = new Date().getFullYear();
+    return books.filter((book) => (book.releaseYear < currentYear - 60)).map((book) => book.name);
+}
+
+console.log(oldBooks());
