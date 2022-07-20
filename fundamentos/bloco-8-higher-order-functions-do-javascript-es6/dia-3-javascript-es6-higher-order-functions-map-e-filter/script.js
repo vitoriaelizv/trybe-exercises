@@ -107,4 +107,15 @@ const oldBooks = () => {
     return books.filter((book) => (book.releaseYear < currentYear - 60)).map((book) => book.name);
 }
 
-console.log(oldBooks());
+// console.log(oldBooks());
+
+// 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais
+
+const authorWith3DotsOnName = () => {
+    return books.find((book) => (
+        book.author.name.split(' ')
+          .filter((word) => word.endsWith('.')).length === 3
+      )).name;
+}
+
+// console.log(authorWith3DotsOnName());
