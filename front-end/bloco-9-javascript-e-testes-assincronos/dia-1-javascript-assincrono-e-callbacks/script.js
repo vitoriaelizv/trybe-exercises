@@ -132,3 +132,5 @@ const handlePokemonSearch = (error, message) => {
 };
 
 // getPokemonDetails('Bulbasaur', handlePokemonSearch);
+
+module.exports = getPokemonDetails;
