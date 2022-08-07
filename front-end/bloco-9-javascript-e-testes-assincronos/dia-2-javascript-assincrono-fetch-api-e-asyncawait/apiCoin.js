@@ -10,8 +10,23 @@ const fetchCoins = async () => {
         .then((data) => data.data)
         .catch((error) => error.toString());
 
-    console.log(coins);
+    // console.log(coins);
     return coins;
 }
 
-fetchCoins();
+const setCoins = async () => {
+    const coins = await fetchCoins();
+
+    const coinsList = document.getElementById('coins-list');
+
+    coins.forEach((coin) => {
+        const newLi = document.createElement('li');
+        const usdPrice = Number(coin.priceUsd);
+
+        newLi.innerText = `${coin.name} (${coin.symbol}): ${usdPrice.toFixed(2)}`;
+
+        coinsList.appendChild(newLi);
+    });
+}
+
+setCoins();
