@@ -10,7 +10,7 @@ const fetchCoins = async () => {
         .then((data) => data.data)
         .catch((error) => error.toString());
 
-    // console.log(coins);
+    console.log(coins);
     return coins;
 }
 
@@ -19,7 +19,8 @@ const setCoins = async () => {
 
     const coinsList = document.getElementById('coins-list');
 
-    coins.forEach((coin) => {
+    coins.filter((coin) => Number(coin.rank) <= 10)
+    .forEach((coin) => {
         const newLi = document.createElement('li');
         const usdPrice = Number(coin.priceUsd);
 
