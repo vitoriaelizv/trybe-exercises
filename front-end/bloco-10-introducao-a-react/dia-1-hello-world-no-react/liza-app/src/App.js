@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
+// import Header from "./Header";
 
-// criando a função Task
 const Task = (value) => {
   return (
     <li>{value}</li>
