@@ -1,5 +1,7 @@
-// import React from "react";
-// import Header from "./Header";
+import React from "react";
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
 const Task = (value) => {
   return (
@@ -16,6 +18,9 @@ function App() {
           { Task('Estudar') }
           { tarefas.map((tarefa) => <li>{ tarefa }</li>) }
         </ul>
+        <Header/>
+        <Content/>
+        <Footer/>
     </div>
   );
 }
